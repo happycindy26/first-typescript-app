@@ -31,7 +31,7 @@ function App() {
 
 
   return (
-    <div >
+    <div className="App">
       <AddForm employee={employee} setEmployee={setEmployee}/>
      <AddMe employee={employee} />
     </div>

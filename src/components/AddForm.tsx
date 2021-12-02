@@ -20,7 +20,8 @@ const AddForm: React.FC<IProps> = ({employee, setEmployee}) => {
             [e.target.name]: e.target.value
         })
     }
-    const handleClick = (): void => {
+    const handleSubmit = (e:React.FormEvent<HTMLFormElement>): void => {
+        e.preventDefault();
         setEmployee([
             ...employee,
             {
@@ -40,7 +41,7 @@ const AddForm: React.FC<IProps> = ({employee, setEmployee}) => {
  
     return (
         <div>
-            <form className="form">
+            <form className="form" onSubmit={handleSubmit}>
                 <input 
                     type="text" 
                     name="name"
@@ -77,11 +78,13 @@ const AddForm: React.FC<IProps> = ({employee, setEmployee}) => {
                     onChange={handleChage}
                     required
                 />
-                <input
-                    
-                    value="Add Me"
-                    onClick={handleClick}
-                />
+                <button
+                    type="submit"
+                    value="Add Me" 
+                    className="button" 
+                >
+                    Add me
+                </button>
             </form>
         </div>
     )

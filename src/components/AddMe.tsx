@@ -17,11 +17,9 @@ const AddMe: React.FC<IProps> = ({employee}) => {
         })
     }
     return (
-        
             <div className="List">
                 {renderList()}
-            </div>
-        
+            </div> 
     )
 }
 

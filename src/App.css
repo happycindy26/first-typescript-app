@@ -1,16 +1,11 @@
-/* .App {
+.App {
+  margin: 2rem;
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-} */
 .List {
   display: flex;
   justify-content: center;
-  align-items: center;
-  
+  align-items: center; 
 }
 .container {
   margin: 2rem;
@@ -23,10 +18,19 @@
 }
 .input {
   margin: 1rem;
- 
   text-align: center;
 }
+.button {
+  background-color: lightblue;
+  padding: .2rem 2rem;
+  border: none;
+  border-radius: 2rem;
+}
+.button:hover {
+  cursor: pointer;
+  background-color: rgb(29, 183, 235);
 
+}
 /* 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
