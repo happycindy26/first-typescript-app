@@ -1,12 +1,33 @@
-.App {
+/* .App {
   text-align: center;
 }
 
 .App-logo {
   height: 40vmin;
   pointer-events: none;
+} */
+.List {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+.container {
+  margin: 2rem;
+}
+.img {
+  height: 6rem;
+}
+.form {
+  text-align: center;
+}
+.input {
+  margin: 1rem;
+ 
+  text-align: center;
 }
 
+/* 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
@@ -35,4 +56,4 @@
   to {
     transform: rotate(360deg);
   }
-}
+} */
